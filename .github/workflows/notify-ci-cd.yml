@@ -1,0 +1,36 @@
+name: Notify CI-CD Pipeline
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+      - r23dev
+      - datamig
+      - master
+      - uat2
+      - sit
+      - stg
+      - hotfix
+      - develop3
+      - euat
+      - r2dev5
+
+jobs:
+  trigger-ci-cd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send repository_dispatch to ci-cd-pipelines
+        run: |
+          curl -X POST https://api.github.com/repos/sanjay241190/ci-cd-pipelines/dispatches \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: token ${{ secrets.GH_PAT }}" \
+          -d '{
+            "event_type": "sf-pr-created",
+            "client_payload": {
+              "pr_number": "${{ github.event.pull_request.number }}",
+              "source_branch": "${{ github.head_ref }}",
+              "target_branch": "${{ github.base_ref }}"
+            }
+          }'
