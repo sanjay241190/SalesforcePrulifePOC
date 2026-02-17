@@ -2,7 +2,7 @@ name: Notify CI-CD Pipeline
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
     branches:
       - main
       - r23dev
