@@ -25,7 +25,7 @@ jobs:
         run: |
           curl -X POST https://api.github.com/repos/sanjay241190/ci-cd-pipelines/dispatches \
           -H "Accept: application/vnd.github+json" \
-          -H "Authorization: token ${{ secrets.GH_PAT }}" \
+          -H "Authorization: token ${{ secrets.PAT_PRULIFE }}" \
           -d '{
             "event_type": "sf-pr-created",
             "client_payload": {
