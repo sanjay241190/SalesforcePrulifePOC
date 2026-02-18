@@ -10,4 +10,7 @@ jobs:
     with:
       source_branch: ${{ github.head_ref }}
       target_branch: ${{ github.base_ref }}
-    secrets: inherit
+    secrets:
+      GH_PAT: ${{ secrets.GH_PAT }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
