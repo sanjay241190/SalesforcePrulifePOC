@@ -6,7 +6,7 @@ on:
 
 jobs:
   validate:
-    uses: sanjay241190/ci-cd-pipelines/.github/workflows/validate-reusable.yml@main
+    uses: sanjay241190/ci-cd-pipelines/.github/workflows/VALIDATE_PULL_REQUEST.yml@main
     with:
       source_branch: ${{ github.head_ref }}
       target_branch: ${{ github.base_ref }}
