@@ -14,3 +14,4 @@ jobs:
       GH_PAT: ${{ secrets.GH_PAT }}
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      SF_AUTH_URL_DEV: ${{ secrets.SF_AUTH_URL }}
