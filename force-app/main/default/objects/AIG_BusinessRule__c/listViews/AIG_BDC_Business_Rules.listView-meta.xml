@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_BDC_Business_Rules</fullName>
+    <columns>NAME</columns>
+    <columns>AIG_State__c</columns>
+    <columns>AIG_AssignOwner__c</columns>
+    <columns>AIG_IsActive__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AIG_Type__c</field>
+        <operation>equals</operation>
+        <value>BDC User</value>
+    </filters>
+    <label>BDC  Business Rules</label>
+</ListView>

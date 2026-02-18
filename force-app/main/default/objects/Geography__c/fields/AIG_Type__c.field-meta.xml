@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Region</fullName>
+                <default>false</default>
+                <label>VPBD Region</label>
+            </value>
+            <value>
+                <fullName>VPBD Territory</fullName>
+                <default>false</default>
+                <label>VPBD Territory</label>
+            </value>
+            <value>
+                <fullName>CR Territory</fullName>
+                <default>false</default>
+                <label>CR Territory</label>
+            </value>
+            <value>
+                <fullName>RM Region</fullName>
+                <default>false</default>
+                <label>RM Region</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

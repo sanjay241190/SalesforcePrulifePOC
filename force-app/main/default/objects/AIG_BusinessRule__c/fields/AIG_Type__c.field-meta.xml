@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Type__c</fullName>
+    <description>This will tell what for what type of user is the business rule record created?</description>
+    <inlineHelpText>Type of user</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BDC User</fullName>
+                <default>false</default>
+                <label>BDC User</label>
+            </value>
+            <value>
+                <fullName>Bid Unit Analyst</fullName>
+                <default>false</default>
+                <label>Bid Unit Analyst</label>
+            </value>
+            <value>
+                <fullName>Consultant Relations User</fullName>
+                <default>false</default>
+                <label>Consultant Relations User</label>
+            </value>
+            <value>
+                <fullName>Deal Management</fullName>
+                <default>false</default>
+                <label>Deal Management</label>
+            </value>
+            <value>
+                <fullName>Pricing Analyst</fullName>
+                <default>false</default>
+                <label>Pricing Analyst</label>
+            </value>
+            <value>
+                <fullName>VPBD User</fullName>
+                <default>false</default>
+                <label>VPBD User</label>
+            </value>
+            <value>
+                <fullName>ERM User</fullName>
+                <default>false</default>
+                <label>Managing ERM User</label>
+            </value>
+            <value>
+                <fullName>Milestone Pricing User</fullName>
+                <default>false</default>
+                <label>Milestone Pricing User</label>
+            </value>
+            <value>
+                <fullName>Milestone Proposal User</fullName>
+                <default>false</default>
+                <label>Milestone Proposal User</label>
+            </value>
+            <value>
+                <fullName>Bid Manager</fullName>
+                <default>false</default>
+                <label>Bid Manager</label>
+            </value>
+            <value>
+                <fullName>Pricing Manager</fullName>
+                <default>false</default>
+                <label>Pricing Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

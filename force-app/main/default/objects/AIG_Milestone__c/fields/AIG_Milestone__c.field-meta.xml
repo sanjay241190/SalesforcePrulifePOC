@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Milestone__c</fullName>
+    <label>Current Milestone</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Milestone_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pricing Request Submitted Date</fullName>
+                <default>false</default>
+                <label>Pricing Request Submitted Date</label>
+            </value>
+            <value>
+                <fullName>Proposal Due Date</fullName>
+                <default>false</default>
+                <label>Proposal Due Date</label>
+            </value>
+            <value>
+                <fullName>Bid Decision Date</fullName>
+                <default>false</default>
+                <label>Bid Decision Date</label>
+            </value>
+            <value>
+                <fullName>Strategy Call Date</fullName>
+                <default>false</default>
+                <label>Strategy Call Date</label>
+            </value>
+            <value>
+                <fullName>Preliminary Pricing Due Date</fullName>
+                <default>false</default>
+                <label>Preliminary Pricing Due Date</label>
+            </value>
+            <value>
+                <fullName>Pricing Review Call Date</fullName>
+                <default>false</default>
+                <label>Pricing Review Call Date</label>
+            </value>
+            <value>
+                <fullName>Executive Review Meeting</fullName>
+                <default>false</default>
+                <label>Executive Review Meeting</label>
+            </value>
+            <value>
+                <fullName>Write-Up Due Date</fullName>
+                <default>false</default>
+                <label>Write-Up Due Date</label>
+            </value>
+            <value>
+                <fullName>Draft Proposal Creation Date</fullName>
+                <default>false</default>
+                <label>Draft Proposal Creation Date</label>
+            </value>
+            <value>
+                <fullName>Draft Proposal Review Date</fullName>
+                <default>false</default>
+                <label>Draft Proposal Review Date</label>
+            </value>
+            <value>
+                <fullName>Pricing Population &amp; Actuary Review Date</fullName>
+                <default>false</default>
+                <label>Pricing Population &amp; Actuary Review Date</label>
+            </value>
+            <value>
+                <fullName>Proposal Population &amp; Actuary Review Date</fullName>
+                <default>false</default>
+                <label>Proposal Population &amp; Actuary Review Date</label>
+            </value>
+            <value>
+                <fullName>Sales Lead Review Date</fullName>
+                <default>false</default>
+                <label>Sales Lead Review Date</label>
+            </value>
+            <value>
+                <fullName>Final Proposal Due Date</fullName>
+                <default>false</default>
+                <label>Final Proposal Due Date</label>
+            </value>
+            <value>
+                <fullName>Glenn / Ken Review Meeting</fullName>
+                <default>false</default>
+                <label>Glenn / Ken Review Meeting</label>
+            </value>
+            <value>
+                <fullName>Proposal Ship Date</fullName>
+                <default>false</default>
+                <label>Proposal Ship Date</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <valueName>Bid Decision Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Strategy Call Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <valueName>Preliminary Pricing Due Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <valueName>Write-Up Due Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <valueName>Proposal Population &amp; Actuary Review Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing Timeline</controllingFieldValue>
+            <valueName>Glenn / Ken Review Meeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Proposal Due Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Draft Proposal Creation Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Draft Proposal Review Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Sales Lead Review Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal Timeline</controllingFieldValue>
+            <valueName>Proposal Ship Date</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

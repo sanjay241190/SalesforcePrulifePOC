@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_cannot_update_system_target_date</fullName>
+    <active>false</active>
+    <description>No user can Update System Generated Target Date</description>
+    <errorConditionFormula>ISCHANGED(AIG_Target_Date__c)</errorConditionFormula>
+    <errorDisplayField>AIG_Target_Date__c</errorDisplayField>
+    <errorMessage>System Generated Target Date cannot be updated.</errorMessage>
+</ValidationRule>

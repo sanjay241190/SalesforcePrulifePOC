@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Milestone__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Milestone</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bid Decision Date</fullName>
+                <default>true</default>
+                <label>Bid Decision Date</label>
+            </value>
+            <value>
+                <fullName>Strategy Call Date</fullName>
+                <default>false</default>
+                <label>Strategy Call Date</label>
+            </value>
+            <value>
+                <fullName>Executive Review Meeting</fullName>
+                <default>false</default>
+                <label>Executive Review Meeting</label>
+            </value>
+            <value>
+                <fullName>Write-Up Due Date</fullName>
+                <default>false</default>
+                <label>Write-Up Due Date</label>
+            </value>
+            <value>
+                <fullName>Draft Proposal Creation Date</fullName>
+                <default>false</default>
+                <label>Draft Proposal Creation Date</label>
+            </value>
+            <value>
+                <fullName>Draft Proposal Review Date</fullName>
+                <default>false</default>
+                <label>Draft Proposal Review Date</label>
+            </value>
+            <value>
+                <fullName>Sales Lead Review Date</fullName>
+                <default>false</default>
+                <label>Sales Lead Review Date</label>
+            </value>
+            <value>
+                <fullName>Final Proposal Due Date</fullName>
+                <default>false</default>
+                <label>Final Proposal Due Date</label>
+            </value>
+            <value>
+                <fullName>Proposal Ship Date</fullName>
+                <default>false</default>
+                <label>Proposal Ship Date</label>
+            </value>
+            <value>
+                <fullName>Preliminary Pricing Due Date</fullName>
+                <default>false</default>
+                <label>Preliminary Pricing Due Date</label>
+            </value>
+            <value>
+                <fullName>Pricing Review Call Date</fullName>
+                <default>false</default>
+                <label>Pricing Review Call Date</label>
+            </value>
+            <value>
+                <fullName>Proposal Population &amp; Actuary Review Date</fullName>
+                <default>false</default>
+                <label>Proposal Population &amp; Actuary Review Date</label>
+            </value>
+            <value>
+                <fullName>Pricing Population &amp; Actuary Review Date</fullName>
+                <default>false</default>
+                <label>Pricing Population &amp; Actuary Review Date</label>
+            </value>
+            <value>
+                <fullName>Preliminary Pricing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Preliminary Pricing</label>
+            </value>
+            <value>
+                <fullName>Pricing Population &amp; Actuary Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing Population &amp; Actuary Review</label>
+            </value>
+            <value>
+                <fullName>Pricing Review Call</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing Review Call</label>
+            </value>
+            <value>
+                <fullName>Proposal Population &amp; Actuary Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proposal Population &amp; Actuary Review</label>
+            </value>
+            <value>
+                <fullName>Strategy Call</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategy Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

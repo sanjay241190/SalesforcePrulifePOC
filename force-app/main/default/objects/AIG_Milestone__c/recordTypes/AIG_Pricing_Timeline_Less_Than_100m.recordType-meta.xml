@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Pricing_Timeline_Less_Than_100m</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>AIG_Milestone_Task_Compact_Layout</compactLayoutAssignment>
+    <label>Pricing Timeline Less Than 100m</label>
+    <picklistValues>
+        <picklist>AIG_Milestone__c</picklist>
+        <values>
+            <fullName>Bid Decision Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preliminary Pricing Due Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Review Call Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Population %26 Actuary Review Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategy Call Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write-Up Due Date</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Milestone_Type__c</picklist>
+        <values>
+            <fullName>Pricing Timeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Timeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

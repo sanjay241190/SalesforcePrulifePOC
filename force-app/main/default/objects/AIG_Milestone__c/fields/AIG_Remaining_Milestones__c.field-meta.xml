@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Remaining_Milestones__c</fullName>
+    <label>Remaining Milestones</label>
+    <summaryFilterItems>
+        <field>AIG_Milestone_Task__c.AIG_Actual_Date__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>AIG_Milestone_Task__c.Milestone__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Criteria_Name__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Criteria Name</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GreaterThan100m</fullName>
+                <default>true</default>
+                <label>GreaterThan100m</label>
+            </value>
+            <value>
+                <fullName>GreaterThan100mHardCopy</fullName>
+                <default>false</default>
+                <label>GreaterThan100mHardCopy</label>
+            </value>
+            <value>
+                <fullName>LessThan100mHardCopy</fullName>
+                <default>false</default>
+                <label>LessThan100mHardCopy</label>
+            </value>
+            <value>
+                <fullName>LessThan100m</fullName>
+                <default>false</default>
+                <label>LessThan100m</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

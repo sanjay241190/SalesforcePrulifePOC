@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIG_Record_Type__c</fullName>
+    <description>Record type for state owner</description>
+    <label>Record Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plan Sponsor</fullName>
+                <default>false</default>
+                <label>Plan Sponsor</label>
+            </value>
+            <value>
+                <fullName>Plan Sponsor Prospect</fullName>
+                <default>false</default>
+                <label>Plan Sponsor Prospect</label>
+            </value>
+            <value>
+                <fullName>Onboarded Plan Sponsor</fullName>
+                <default>false</default>
+                <label>Onboarded Plan Sponsor</label>
+            </value>
+            <value>
+                <fullName>Plan Consultant Firm</fullName>
+                <default>false</default>
+                <label>Plan Consultant Firm</label>
+            </value>
+            <value>
+                <fullName>Plan Sponsor Contact</fullName>
+                <default>false</default>
+                <label>Plan Sponsor Contact</label>
+            </value>
+            <value>
+                <fullName>Plan Consultant Contact</fullName>
+                <default>false</default>
+                <label>Plan Consultant Contact</label>
+            </value>
+            <value>
+                <fullName>Plan Sponsor Opportunity</fullName>
+                <default>false</default>
+                <label>Plan Sponsor Opportunity</label>
+            </value>
+            <value>
+                <fullName>Participant Opportunity</fullName>
+                <default>false</default>
+                <label>Participant Opportunity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
