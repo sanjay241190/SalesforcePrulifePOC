@@ -1,0 +1,19 @@
+<template>
+        <lightning-card title="Conditonal Rendering" icon-name="custom:custom12">
+                <div class="slds-m-around_medium">
+                   <lightning-input
+                        type="checkbox"
+                        label="Show Details"
+                        onchange={handleChange}
+                  ></lightning-input>
+                </div>
+                <div class="slds-m-around_medium">
+                   <template if:true={areDetailsVisible}>
+                       <h2>Hey Sanjay, These are your Details</h2> 
+                   </template>      
+                   <template if:false={areDetailsVisible} >
+                       <h2>Check the box to view your details!</h2>
+                   </template>         
+                </div>
+           </lightning-card>
+</template>
