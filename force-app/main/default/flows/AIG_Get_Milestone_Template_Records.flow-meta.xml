@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Getting Records from Milestone Metadata</description>
+    <interviewLabel>Get Milestone Template Records {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Get Milestone Template Records</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Milestone_Metadata</name>
+        <label>Get Milestone Metadata</label>
+        <locationX>189</locationX>
+        <locationY>46</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AIG_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AIG_Criteria_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CriteriaName</elementReference>
+            </value>
+        </filters>
+        <object>AIG_Milestone_Template__mdt</object>
+        <outputReference>TemplateRecords</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AIG_Criteria_Name__c</queriedFields>
+        <queriedFields>AIG_Milestone__c</queriedFields>
+        <queriedFields>AIG_Milestone_Type__c</queriedFields>
+        <queriedFields>AIG_Days_After__c</queriedFields>
+        <queriedFields>AIG_Key_Date__c</queriedFields>
+        <queriedFields>AIG_User_Type__c</queriedFields>
+        <queriedFields>AIG_Dependency__c</queriedFields>
+        <queriedFields>AIG_Related_Milestone__c</queriedFields>
+    </recordLookups>
+    <startElementReference>Get_Milestone_Metadata</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>CriteriaName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>TemplateRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>AIG_Milestone_Template__mdt</objectType>
+    </variables>
+</Flow>
