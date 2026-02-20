@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Custom XML Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://pmd.sourceforge.net/ruleset/2.0.0
+           https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Enterprise Custom XML Rules for Salesforce Metadata
+    </description>
+
+    <!-- =========================================== -->
+    <!-- Performance & Structure                     -->
+    <!-- =========================================== -->
+
+    <rule ref="category/xml/bestpractices.xml/AvoidDeeplyNestedIfStmts"/>
+    <rule ref="category/xml/bestpractices.xml/UnusedNamespacePrefix"/>
+
+    <!-- =========================================== -->
+    <!-- Design                                      -->
+    <!-- =========================================== -->
+
+    <rule ref="category/xml/design.xml/AvoidDuplicateAttributes"/>
+    <rule ref="category/xml/design.xml/AvoidMultipleDeclarations"/>
+
+</ruleset>

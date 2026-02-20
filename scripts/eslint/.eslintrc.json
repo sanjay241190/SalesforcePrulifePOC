@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "@salesforce/eslint-config-lwc/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@lwc/eslint-plugin-lwc"
+  ],
+  "rules": {
+
+    /* ========================= */
+    /* Possible Errors           */
+    /* ========================= */
+
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": "warn",
+    "no-debugger": "error",
+
+    /* ========================= */
+    /* Best Practices            */
+    /* ========================= */
+
+    "eqeqeq": ["error", "always"],
+    "curly": ["error", "all"],
+    "no-eval": "error",
+    "no-implied-eval": "error",
+
+    /* ========================= */
+    /* Style & Maintainability   */
+    /* ========================= */
+
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "indent": ["error", 2],
+    "comma-dangle": ["error", "never"],
+
+    /* ========================= */
+    /* LWC Specific              */
+    /* ========================= */
+
+    "@lwc/lwc/no-async-operation": "warn",
+    "@lwc/lwc/no-document-query": "error",
+    "@lwc/lwc/no-inner-html": "error",
+    "@lwc/lwc/valid-api": "error",
+    "@lwc/lwc/valid-wire": "error"
+  }
+}

@@ -1,0 +1,86 @@
+<project
+  basedir="."
+  default="validate"
+  name="ncs"
+  xmlns:sf="antlib:com.salesforce"
+>
+
+	<property name="sf.maxPoll" value="35" />
+	<property name="sf.pollWaitMillis" value="10000" />
+	<property name="sf.ignoreWarnings" value="true" />
+	<property file="build.properties" />
+	
+	<filterset id="project.properties" begintoken="@" endtoken="@">
+		<filtersfile file="scripts/properties/${sf.env}.properties" />
+	</filterset>
+
+	<target name="prepare">		
+		<!-- Filter in the ${sf.env}/project.properties into the source code -->
+		<delete dir="tmp" />
+		<mkdir dir="tmp/" />
+		<copy todir="tmp" encoding="ISO-8859-1">
+			<fileset dir="force-app/main/default">
+				<include name="applications/**" />
+				<include name="tabs/**" />
+				<include name="dashboards/**" />
+				<include name="queues/**" />
+				<include name="groups/**" />
+				<include name="settings/**" />
+				<include name="labels/**" />
+				<include name="classes/**" />
+				<include name="documents/**" />
+				<include name="email/**" />
+				<include name="staticresources/**" />
+				<include name="workflows/**" />
+				<include name="autoResponseRules/**" />
+				<include name="reports/**" />
+				<include name="customMetadata/**" />
+				<include name="sites/**" />
+				<include name="approvalProcesses/**" />
+                <include name="profiles/**" />
+				<include name="customMetadata/**" />
+				<include name="objects/**" />
+				<include name="flows/**" />
+				<include name="flexipages/**" />
+				<include name="lwc/**" />
+				<include name="networks/**" />
+				<include name="connectedApps/**" />
+				<include name="dataSources/**" />
+				<include name="authproviders/**" />
+				<include name="namedCredentials/**" />
+				<include name="sharingRules/**" />
+				<include name="emailservices/**" />
+				<include name="PlatformEventSubscriberConfigs/**" />
+			</fileset>
+			<filterset refid="project.properties" />		
+		</copy>
+
+		<!-- merge to deploy folder -->
+		<delete dir="deploy/force-app/main/default" />
+		<mkdir dir="deploy/force-app/main/default" />
+		<copy todir="deploy/force-app/main/default" encoding="ISO-8859-1">
+			<fileset dir="force-app/main/default">
+				<include name="*/**" />
+			</fileset>
+		</copy>
+		<copy todir="force-app/main/default" overwrite="true" encoding="ISO-8859-1">
+			<fileset dir="tmp">
+				<include name="*/**" />
+			</fileset>
+		</copy>
+		<copy
+      todir="deploy/force-app/main/default"
+      overwrite="true"
+      encoding="ISO-8859-1"
+    >
+			<fileset dir="tmp">
+				<include name="*/**" />
+			</fileset>
+		</copy>
+		
+		<!-- clean up -->
+		<delete dir="tmp" />
+		<delete dir="predeploy" />
+	</target>
+
+</project>

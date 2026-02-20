@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Custom Apex Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://pmd.sourceforge.net/ruleset/2.0.0
+           https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Enterprise Custom Apex Rules - High Priority Only
+    </description>
+
+    <!-- =========================================== -->
+    <!-- Performance / Governor Limits              -->
+    <!-- =========================================== -->
+
+    <rule ref="category/apex/performance.xml/AvoidDmlStatementsInLoops"/>
+    <rule ref="category/apex/performance.xml/AvoidSoqlInLoops"/>
+    <rule ref="category/apex/performance.xml/AvoidMultipleMassSchemaLookups"/>
+    <rule ref="category/apex/performance.xml/OperationWithLimitsInLoop"/>
+
+    <!-- =========================================== -->
+    <!-- Security                                    -->
+    <!-- =========================================== -->
+
+    <rule ref="category/apex/security.xml/ApexCRUDViolation"/>
+    <rule ref="category/apex/security.xml/ApexSharingViolations"/>
+    <rule ref="category/apex/security.xml/InsecureEndpoint"/>
+    <rule ref="category/apex/security.xml/ApexXSSFromURLParam"/>
+
+    <!-- =========================================== -->
+    <!-- Best Practices                              -->
+    <!-- =========================================== -->
+
+    <rule ref="category/apex/bestpractices.xml/AvoidHardcodingId"/>
+    <rule ref="category/apex/bestpractices.xml/UnusedLocalVariable"/>
+    <rule ref="category/apex/bestpractices.xml/EmptyIfStmt"/>
+    <rule ref="category/apex/bestpractices.xml/EmptyCatchBlock"/>
+    <rule ref="category/apex/bestpractices.xml/EmptyTryBlock"/>
+
+    <!-- =========================================== -->
+    <!-- Code Style                                  -->
+    <!-- =========================================== -->
+
+    <rule ref="category/apex/codestyle.xml/ClassNamingConventions"/>
+    <rule ref="category/apex/codestyle.xml/MethodNamingConventions"/>
+    <rule ref="category/apex/codestyle.xml/FieldNamingConventions"/>
+
+</ruleset>
