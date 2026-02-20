@@ -8,7 +8,7 @@ static void setupTestData() {
     for(Integer i = 0; i < 5; i++) {
         testAccounts.add(new Account(
             Name = 'Test Account ' + i,
-            External_Id__c = 'EXT-' + i   // ✅ Add required field
+            External_Id__c = 'EXT-' + i   // ✅ Add required field.
         ));
     }
     
