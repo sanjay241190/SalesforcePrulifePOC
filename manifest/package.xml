@@ -6,7 +6,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexComponent</name>
+        <name>Layout</name>
     </types>
     <types>
         <members>*</members>
@@ -26,7 +26,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>LightningComponentBundle</name>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
