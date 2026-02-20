@@ -7,15 +7,11 @@
            https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        High severity Salesforce rules only
+        High severity Salesforce rules
     </description>
 
-    <!-- Include standard Apex rules -->
+    <!-- Standard Apex Categories -->
     <rule ref="category/apex/security.xml"/>
     <rule ref="category/apex/performance.xml"/>
-
-    <!-- Include custom rules -->
-    <rule ref="../category/apex/apex_custom_rules.xml"/>
-    <rule ref="../category/xml/xml_custom_rules.xml"/>
 
 </ruleset>
