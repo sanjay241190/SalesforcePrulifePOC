@@ -1,0 +1,20 @@
+name: Deploy On Merge
+
+on:
+  push:
+    branches:
+      - dev
+      - uat
+      - main
+
+jobs:
+  deploy:
+    uses: sanjay241190/ci-cd-pipelines/.github/workflows/DEPLOY_ON_MERGE.yml@main
+    with:
+      target_branch: ${{ github.ref_name }}
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      SF_AUTH_URL_DEV: ${{ secrets.SF_AUTH_URL_DEV }}
+      SF_AUTH_URL_UAT: ${{ secrets.SF_AUTH_URL_UAT }}
+      SF_AUTH_URL_PROD: ${{ secrets.SF_AUTH_URL_PROD }}
