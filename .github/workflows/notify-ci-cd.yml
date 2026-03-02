@@ -17,5 +17,5 @@ jobs:
       SF_AUTH_URL_DEV: ${{ secrets.SF_AUTH_URL_DEV }}
       SF_AUTH_URL_UAT: ${{ secrets.SF_AUTH_URL_UAT }}
       GH_PAT_CI_CD_PIPELINES_REPO_SECRET : ${{ secrets.GH_PAT_CI_CD_PIPELINES_REPO }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       
