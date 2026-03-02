@@ -16,3 +16,6 @@ jobs:
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       SF_AUTH_URL_DEV: ${{ secrets.SF_AUTH_URL_DEV }}
       SF_AUTH_URL_UAT: ${{ secrets.SF_AUTH_URL_UAT }}
+
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GH_PAT_CI_CD_PIPELINES_REPO : ${{ secrets.GH_PAT_CI_CD_PIPELINES_REPO  }}
