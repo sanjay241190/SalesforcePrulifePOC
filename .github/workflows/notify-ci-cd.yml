@@ -16,7 +16,3 @@ jobs:
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       SF_AUTH_URL_DEV: ${{ secrets.SF_AUTH_URL_DEV }}
       SF_AUTH_URL_UAT: ${{ secrets.SF_AUTH_URL_UAT }}
-      GH_PAT_CI_CD_PIPELINES_REPO_SECRET : ${{ secrets.GH_PAT_CI_CD_PIPELINES_REPO }}
-      GH_TOKEN: ${{ secrets.FINE_GRAIN_AI_TOKEN }}
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      
