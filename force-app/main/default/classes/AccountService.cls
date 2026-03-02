@@ -1,7 +1,7 @@
 public with sharing class AccountService {
     
     /**
-     * Updates the Description field of Accounts
+     * Updates the Description field of Accounts..
      * @param accountIds List of Account record Ids
      * @param descriptionText Text to be updated
      */
